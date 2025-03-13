@@ -176,7 +176,7 @@ header{
 .button_left{
     background-color: #3b6451;
     border-radius: 10px;
-    padding: 15px 0;
+    padding: 25px 0;
     cursor: pointer;
 }
 .button_left p{
@@ -228,6 +228,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+    margin-bottom: 30px;
 }
 .card_rooms{
     display: block;
@@ -263,4 +264,59 @@ header{
 }
 swiper-slide{
     max-height: 99vh;
+}
+/* под табом */
+.contact{
+    background: rgb(239, 240, 235);
+    padding: 75px 0;
+}
+.contact h2{
+    color: #3b6451;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contact_inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+/* .contact_left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 30px;
+} */
+ .contact_left_top{
+    display: flex;
+    /* gap: 20px; */
+ }
+ .contact_left_middle{
+    display: flex;
+    /* gap: 20px; */
+ }
+.contact_right{
+    background-color: #3b6451;
+    border-radius: 30px;
+    padding: 40px;
+    font-size: 23px;
+}
+.contact_left p{
+    text-align: left;
+    font-size: 23px;
+    font-weight: 500;
+}
+.contact_inner a{
+    color: #000;
+    font-size: 18px;
+}
+.phone, .whats{
+    display: flex;
+    gap: 10px;
 }

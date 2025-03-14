@@ -330,6 +330,17 @@ swiper-slide{
     border-style: solid;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
+  swiper-container {
+    --swiper-pagination-color: #3B6451; /* Цвет активного буллета */
+    --swiper-pagination-bullet-inactive-color: white; /* Цвет неактивного буллета */
+    --swiper-pagination-bullet-inactive-opacity: 1; /* Прозрачность неактивного буллета */
+    --swiper-pagination-bullet-size: 8px; /* Размер буллета */
+    --swiper-pagination-bullet-horizontal-gap: 6px; /* Отступ между буллетами */
+
+    /* Настройки стрелок навигации */
+  --swiper-navigation-color: white; /* Цвет стрелок */
+  --swiper-navigation-size: 24px; /* Размер стрелок */
+  }
 /* под табом */
 .contact{
     background: rgb(239, 240, 235);
@@ -380,7 +391,75 @@ swiper-slide{
     margin-bottom: 10px;   
     text-align: center;
 }
+/*Сертификаты*/
+.sertificat_block {
+    background: rgb(239, 240, 235);
+    padding: 75px 0;
+}
+.sertificat_block__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:40px;
+}
+.sertificat_block__item img{
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.sertificat_block__podtitle{
+    color: #3b6451;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 27px;
+}
+.sertificat_block__title{
+    color: #3b6451;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+.sertificat_block__item p{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color:black;
+}
 
+.sertificat_block__buy{
+    color:white;
+    font-family: 'MuseoSans', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #3b6451;
+    padding: 25px 44px;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+}
+.sertificat_block__select{
+    color:black;
+    font-family: 'MuseoSans', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 25px 44px;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+}
+.sertificat_block__btn{
+    display: flex;
+    gap:20px;
+    padding-top: 20px;
+}
 
 /*Бестселлеры*/
 .bestseller_block{

@@ -741,6 +741,10 @@ swiper-slide{
 .footer_items{
     margin-bottom: 10px;
 }
+.footer_items a{
+    font-size: 18px;
+    font-weight: 500;
+}
 .other_list{
     margin-bottom: 20px;
 }

@@ -74,7 +74,18 @@
         <section class="fs">
                 <div class="slider">
                     <swiper-container class="mySwiper" navigation="true" pagination="true">
-                        <swiper-slide><img src="./assets/images/slide1.jpg" alt="" class="img_slide"></swiper-slide>
+                        <swiper-slide>
+                            <img src="./assets/images/slide1.jpg" alt="" class="img_slide">
+                            <div class="slider_info__text">
+                                <div class="slider_info__podtitle">аутентичный спа-салон</div>
+                                <div class="slider_info__title">Приморский</div>
+                                <div class="slider_info__disc">С джакузи под открытым небом</div>
+                                <div class="slider_info__blockbtn">
+                                    <a class="slider_info__leftbtn">Записаться</a>
+                                    <a class="slider_info__rightbtn">Купить сертификат</a>
+                                </div>
+                            </div>
+                        </swiper-slide>
                         <swiper-slide><img src="./assets/images/slide2.jpg" alt="" class="img_slide"></swiper-slide>
                         <swiper-slide><img src="./assets/images/slide3.jpg" alt="" class="img_slide"></swiper-slide>
                         <swiper-slide><img src="./assets/images/slide4.jpg" alt="" class="img_slide"></swiper-slide>
@@ -251,26 +262,26 @@
                 <h2>Бестселлеры ego-spa</h2>
                 <div class="bestseller_block__disc">Самые популярные спа-программы в нашем салоне</div>
                 <div class="bestseller_block__tab-container">
-                    <div class="bestseller_block__tab-item activetab">
+                    <div class="bestseller_block__tab-item activetab" data-tab="tab1">
                         Все
                     </div>
-                    <div class="bestseller_block__tab-item">
+                    <div class="bestseller_block__tab-item" data-tab="tab2">
                         Спа-девичники
                     </div>
-                    <div class="bestseller_block__tab-item">
+                    <div class="bestseller_block__tab-item" data-tab="tab3">
                         Для двоих
                     </div>
-                    <div class="bestseller_block__tab-item">
+                    <div class="bestseller_block__tab-item" data-tab="tab4">
                         Для женщин
                     </div>
-                    <div class="bestseller_block__tab-item">
+                    <div class="bestseller_block__tab-item" data-tab="tab5">
                         Для мужчин
                     </div>
-                    <div class="bestseller_block__tab-item">
+                    <div class="bestseller_block__tab-item" data-tab="tab6">
                         Семейное спа
                     </div>
                 </div>
-                <div class="bestseller_block__tab1">
+                <div class="bestseller_block__tab1 active" id="tab1">
                     <swiper-container class="Swiper_bestseller" space-between="30" navigation="true" pagination="true"  slides-per-view="3">
                         <swiper-slide>
                             <div class="bestseller_item">
@@ -299,7 +310,7 @@
                             </div>
                         </swiper-slide>
                         <swiper-slide>
-                            <div class="bestseller_item">
+                            <div class="bestseller_item" >
                                 <div class="bestseller_item__bage">Бестселлер</div>
                                 <img src="./assets/images/slider-1_bestseller.jpg" alt="">
                                 <div class="bestseller_item__title">Завтрак у Тиффани</div>
@@ -377,6 +388,166 @@
                             </div>
                         </swiper-slide>
                     </swiper-container>
+                </div>
+                <div class="bestseller_block__tab1" id="tab2">
+                    <swiper-container class="Swiper_bestseller" space-between="30" navigation="true" pagination="true"  slides-per-view="3">
+                        <swiper-slide>
+                            <div class="bestseller_item">
+                                <div class="bestseller_item__bage">Бестселлер</div>
+                                <img src="./assets/images/slider-1_bestseller.jpg" alt="">
+                                <div class="bestseller_item__title">Завтрак у Тиффани</div>
+                                <div class="bestseller_item__list">
+                                    <div class="bestseller_item__list-item">Посещение Акватермальной зоны</div> 
+                                    <div class="bestseller_item__list-item">Коктейль из свежевыжатого сока + легкий салат</div>
+                                    <div class="bestseller_item__list-item">Малайзийский энергетический или расслабляющий массаж тела на Масле длительностью 1 час</div>
+                                    <div class="bestseller_item__list-item">Увлажнение тела изысканным Молочком</div>
+                                    <div class="bestseller_item__list-item">Курение кальяна с тропическими ароматами</div>
+                                    <div class="bestseller_item__list-item">Цветочный чай утолит жажду и подарит незабываемые вкусовые ощущения</div>
+                                    <div class="bestseller_item__list-item">Тропические сладости и полезные орехи</div>
+                                </div>
+                                <div class="bestseller_item_clock">
+                                    <img src="./assets/images/clock-0900-svgrepo-com.svg" alt="">
+                                    3 часа
+                                </div>
+                                <div class="bestseller_item__price-title">Цена буднего дня</div>
+                                <div class="bestseller_item__price">21 200р</div>
+                                <div class="bestseller_item_btn-block">
+                                    <a href="">Записаться</a>
+                                    <a href="">Подробнее</a>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="bestseller_item" >
+                                <div class="bestseller_item__bage">Бестселлер</div>
+                                <img src="./assets/images/slider-1_bestseller.jpg" alt="">
+                                <div class="bestseller_item__title">Завтрак у Тиффани</div>
+                                <div class="bestseller_item__list">
+                                    <div class="bestseller_item__list-item">Посещение Акватермальной зоны</div> 
+                                    <div class="bestseller_item__list-item">Коктейль из свежевыжатого сока + легкий салат</div>
+                                    <div class="bestseller_item__list-item">Малайзийский энергетический или расслабляющий массаж тела на Масле длительностью 1 час</div>
+                                    <div class="bestseller_item__list-item">Увлажнение тела изысканным Молочком</div>
+                                    <div class="bestseller_item__list-item">Курение кальяна с тропическими ароматами</div>
+                                    <div class="bestseller_item__list-item">Цветочный чай утолит жажду и подарит незабываемые вкусовые ощущения</div>
+                                    <div class="bestseller_item__list-item">Тропические сладости и полезные орехи</div>
+                                </div>
+                                <div class="bestseller_item_clock">
+                                    <img src="./assets/images/clock-0900-svgrepo-com.svg" alt="">
+                                    3 часа
+                                </div>
+                                <div class="bestseller_item__price-title">Цена буднего дня</div>
+                                <div class="bestseller_item__price">21 200р</div>
+                                <div class="bestseller_item_btn-block">
+                                    <a href="">Записаться</a>
+                                    <a href="">Подробнее</a>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="bestseller_item">
+                                <div class="bestseller_item__bage">Бестселлер</div>
+                                <img src="./assets/images/slider-1_bestseller.jpg" alt="">
+                                <div class="bestseller_item__title">Завтрак у Тиффани</div>
+                                <div class="bestseller_item__list">
+                                    <div class="bestseller_item__list-item">Посещение Акватермальной зоны</div> 
+                                    <div class="bestseller_item__list-item">Коктейль из свежевыжатого сока + легкий салат</div>
+                                    <div class="bestseller_item__list-item">Малайзийский энергетический или расслабляющий массаж тела на Масле длительностью 1 час</div>
+                                    <div class="bestseller_item__list-item">Увлажнение тела изысканным Молочком</div>
+                                    <div class="bestseller_item__list-item">Курение кальяна с тропическими ароматами</div>
+                                    <div class="bestseller_item__list-item">Цветочный чай утолит жажду и подарит незабываемые вкусовые ощущения</div>
+                                    <div class="bestseller_item__list-item">Тропические сладости и полезные орехи</div>
+                                </div>
+                                <div class="bestseller_item_clock">
+                                    <img src="./assets/images/clock-0900-svgrepo-com.svg" alt="">
+                                    3 часа
+                                </div>
+                                <div class="bestseller_item__price-title">Цена буднего дня</div>
+                                <div class="bestseller_item__price">21 200р</div>
+                                <div class="bestseller_item_btn-block">
+                                    <a href="">Записаться</a>
+                                    <a href="">Подробнее</a>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="bestseller_item">
+                                <div class="bestseller_item__bage">Бестселлер</div>
+                                <img src="./assets/images/slider-1_bestseller.jpg" alt="">
+                                <div class="bestseller_item__title">Завтрак у Тиффани</div>
+                                <div class="bestseller_item__list">
+                                    <div class="bestseller_item__list-item">Посещение Акватермальной зоны</div> 
+                                    <div class="bestseller_item__list-item">Коктейль из свежевыжатого сока + легкий салат</div>
+                                    <div class="bestseller_item__list-item">Малайзийский энергетический или расслабляющий массаж тела на Масле длительностью 1 час</div>
+                                    <div class="bestseller_item__list-item">Увлажнение тела изысканным Молочком</div>
+                                    <div class="bestseller_item__list-item">Курение кальяна с тропическими ароматами</div>
+                                    <div class="bestseller_item__list-item">Цветочный чай утолит жажду и подарит незабываемые вкусовые ощущения</div>
+                                    <div class="bestseller_item__list-item">Тропические сладости и полезные орехи</div>
+                                </div>
+                                <div class="bestseller_item_clock">
+                                    <img src="./assets/images/clock-0900-svgrepo-com.svg" alt="">
+                                    3 часа
+                                </div>
+                                <div class="bestseller_item__price-title">Цена буднего дня</div>
+                                <div class="bestseller_item__price">21 200р</div>
+                                <div class="bestseller_item_btn-block">
+                                    <a href="">Записаться</a>
+                                    <a href="">Подробнее</a>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                    </swiper-container>
+                </div>
+            </div>
+        </section>
+        <section class="contact-form_block">
+            <div class="container">
+                <div class="contact-form_block_container">
+                    <div class="contact-form__block-left">
+                        <h2>Свяжитесь с нами</h2>
+                        <div class="contact-form__block-disck">удобным способом или оставьте заявку</div>
+                    </div>
+                    <div class="contact-form__block-right">
+                        <img src="./assets/images/Frame_56.svg" alt="">
+                        <img src="./assets/images/Group_12.svg" alt="">
+                    </div>
+                </div>
+                <div class="contact-form_block_container2">
+                    <div class="contact-form__block-left2">
+                        <div class="contact-form_block_list">
+                            <img src="./assets/images/Group_82_3.svg">
+                            г. Москва, метров ВДНХ, ул. Ярославская, д.12,стр.1(бесплатная парковка)
+                        </div>
+                        <div class="contact-form_block_list">
+                            <img src="./assets/images/Group_83_1.svg">
+                           Режим работы: c 10:00 до 23:00
+                        </div>
+                        <div class="contact-form_block_list">
+                            <img src="./assets/images/Group_80_1.svg">
+                           <a href="/">+7 (999) 999 99 99</a>
+                        </div>
+                        <div class="contact-form_block_list">
+                            <img src="./assets/images/Group_1369.svg">
+                           <a href="/">Whatsapp</a>
+                        </div>
+                        <div class="contact-form_block_list">
+                            <img src="./assets/images/Group_1374.svg">
+                           <a href="/">Telegram</a>
+                        </div>
+                        <div class="contact-form_block_list">
+                            <img src="./assets/images/Group_1370.svg">
+                           <a href="/">spacoktail@mail.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-form__block-right2">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map_block">
+            <div class="container">
+                <div class="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4476b24f7aea840432ac3a26829e785758699ec4467cbf4036b308eb5445d0dc&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
                 </div>
             </div>
         </section>
